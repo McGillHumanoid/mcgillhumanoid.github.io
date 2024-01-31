@@ -49,6 +49,18 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .image-item {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
 
 	</head>
 	<body>
@@ -61,8 +73,8 @@
 			<div class="gtco-container">
 				
 				<div class="row">
-					<div class="col-sm-2 col-xs-12">
-						<div id="gtco-logo"><a href="index.html">McGill Humanoid</div>
+					<div class="col-sm-4 col-xs-24">
+						<a href="index.html"><img src="images/mcgill humanoid text.png" alt="" class="img-rounded"></a>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
@@ -101,25 +113,25 @@
 					<div class="owl-carousel owl-carousel-fullwidth">
 						<div class="item">
 							<a href="#">
-								<img src="images/sim_screenshot.png" alt="Free Website Template by FreeHTML5.co">
+								<img src="images/sim_screenshot.png" alt="">
 								<div class="slider-copy">
-									<h2>Architecture #1</h2>
+									<h2>Unity Sim (for testing ROS functionality)</h2>
 								</div>
 							</a>
 						</div>
 						<div class="item">
 							<a href="#">
-								<img src="images/sim_world.png" alt="Free Website Template by FreeHTML5.co">
+								<img src="images/sim_world.png" alt="">
 								<div class="slider-copy">
-									<h2>Architecture #1</h2>
+									<h2>Unity Sim: Various Testing Grounds</h2>
 								</div>
 							</a>
 						</div>
 						<div class="item">
 							<a href="#">
-								<img src="images/sim_depth_camera.png" alt="Free Website Template by FreeHTML5.co">
+								<img src="images/sim_depth_camera.png" alt="">
 								<div class="slider-copy">
-									<h2>Architecture #1</h2>
+									<h2>Unity Sim: RGB and Depth Camera publishing to ROS</h2>
 								</div>
 							</a>
 						</div>
@@ -144,67 +156,23 @@
 								<div class="gtco-item">
 									<a href="#"><img src="images/ros_humanoid.jpg" alt="" class="img-responsive"></a>
 									<h2><a href="#">Software</h2></a>
-									<p class="role">Simulation,...</p>
+									<p class="role">Simulation, Reinforcement Learning, ROS2, Computer Vision</p>
 								</div>
 							</div>
 							<div class="item">
 								<div class="gtco-item">
 									<a href="#"><img src="images/kintex.jpg" alt="" class="img-responsive"></a>
 									<h2><a href="#">Electrical</h2></a>
-									<p class="role">Firmware, PCB,...</p>
+									<p class="role">Firmware, PCB, Power Management, Servo and Sensor Interfaces</p>
 								</div>
 							</div>
 							<div class="item">
 								<div class="gtco-item">
 									<a href="#"><img src="images/solidworks_humanoid.png" alt="" class="img-responsive"></a>
 									<h2><a href="#">Mechanical</h2></a>
-									<p class="role">CAD, 3D printing,...</p>
+									<p class="role">CAD, FAE, Manufacturing, QA.</p>
 								</div>
 							</div>
-
-							<!-- <div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_1.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">New York Arena</h2></a>
-									<p class="role">New York</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_2.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Eagle Park</h2></a>
-									<p class="role">London</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_3.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Nationals Park</h2></a>
-									<p class="role">Paris, France</p>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_1.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">New York Arena</h2></a>
-									<p class="role">New York</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_2.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Eagle Park</h2></a>
-									<p class="role">London</p>
-								</div>
-							</div>
-							<div class="item">
-								<div class="gtco-item">
-									<a href="#"><img src="images/img_3.jpg" alt="" class="img-responsive"></a>
-									<h2><a href="#">Nationals Park</h2></a>
-									<p class="role">Paris, France</p>
-								</div>
-							</div> -->
 						</div>
 					</div>
 					
@@ -216,145 +184,60 @@
 		<div class="gtco-section">
 			<div class="gtco-container">
 				<div class="row">
-					<div class="col-md-6 gtco-news">
-						<h2>News</h2>	
+					<div class="col-md-20 gtco-news">
+						<h2>Timeline</h2>	
 						<ul>
 							<li>
-								<a href="#">
-									<span class="post-date">September 10, 2016</span>
-									<h3>Manila Bridge Re-construction</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
-								</a>
+								<span class="post-date">January 2024</span>
+								<h3>The Humanoid project is official!</h3>
+								<p>In January 2024, the Humanoid project officially started under the supervision of Prof. J. Vybihal at the Prometheus A.I. Lab with 10 active members, 4 of whom were making this project the subject of their Undergraduate Engineering Capstone Project and 1 of whom is working on the project as part of a research course.</p>
 							</li>
 
 							<li>
-								<a href="#">
-									<span class="post-date">September 10, 2016</span>
-									<h3>Manila Bridge Re-construction</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
-								</a>
+								<span class="post-date">September 2024</span>
+								<h3>Hardware designs complete, software systems finished. RL training begins!</h3>
+								<p>By September 2024 the team aims to have completed the entire mechanical and electrical design, as well as all of the non-RL software systems. A capstone project involving the mechanical design potentially begins, and the research course involving the mechanical design of the legs ends.</p>
 							</li>
 
 							<li>
-								<a href="#">
-									<span class="post-date">September 10, 2016</span>
-									<h3>Manila Bridge Re-construction</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod...</p>
-								</a>
+								<span class="post-date">December 2024</span>
+								<h3>Capstone Project Finished: Robot RL training complete, autonomous walking capabilities demonstrated.</h3>
+								<p>In December 2024, the Capstone Project encompassing the Software and Electrical systems finishes. The robot should be able to autonomously balance and walk entirely autonomously, using RL and ROS hardware interfaces.</p>
+							</li>
+
+							<li>
+								<span class="post-date">May 2025</span>
+								<h3>Robot is ready to compete in Hurocup 2025.</h3>
+								<p>By Summer of 2025, the robot should be able to successfully compete in the "Sprint" challenge of FIRA Hurocup. It must use SLAM, RL, and object detection to autonomously sprint forwards as fast as possible, stop at a line, turn around 180 degrees, and finish the race walking backwards.</p>
+							</li>
+
+							<li>
+								<span class="post-date">September 2025</span>
+								<h3>New members onboarded, ready to continue the project!</h3>
+								<p>By the end of Summer 2025, our newest members should be ready to continue this project while the upper year members graduate. These members will be recruited throughout 2024-2025, and will be trained to understand the different sub-systems of the humanoid robot. We'll also hopefully have been successful at Hurocup 2025</p>
 							</li>
 						</ul>
-						<p><a href="#" class="btn btn-sm btn-special">More News</a></p>
-					</div>
-					<!-- END News -->
-					<div class="col-md-5 col-md-push-1 gtco-testimonials">
-						<h2>Testimonials</h2>
-						<blockquote>
-							<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.&ldquo;</p>
-							<p class="author"><cite>&mdash; John Doe Dueller</cite></p>
-						</blockquote>
-						<blockquote>
-							<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat tincidunt. Donec tincidunt volutpat erat.&ldquo;</p>
-							<p class="author"><cite>&mdash; John Doe Dueller</cite></p>
-						</blockquote>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- END  -->
-
-		<div class="gtco-section gto-features">
-			<div class="gtco-container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-zip icon"></i>
-							<div class="copy">
-								<h3>Architect</h3>
-								<p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
-								<p><a href="#" class="gtco-more">Learn more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-hummer icon"></i>
-							<div class="copy">
-								<h3>Planning</h3>
-								<p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
-								<p><a href="#" class="gtco-more">Learn more</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-left">
-							<i class="ti-plug icon"></i>
-							<div class="copy">
-								<h3>Parks &amp; Events</h3>
-								<p>Lorem ipsum dolor sit ameteista, consectetur adipiscing is not elitistaris.</p>
-								<p><a href="#" class="gtco-more">Learn more</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<footer id="gtco-footer" class="gtco-section" role="contentinfo">
+			<h3 style="text-align:center; color: white" class="gtco-heading text-center">Our Proud Sponsors:</h3>
 			<div class="gtco-container">
-				<div class="row row-pb-md">
-					<div class="col-md-4 gtco-widget gtco-footer-paragraph">
-						<h3>Beryllium</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod.</p>
-					</div>
-					<div class="col-md-4">
-						<div class="row">
-							<div class="col-md-6 gtco-footer-link">
-								<h3>Links</h3>
-								<ul class="gtco-list-link">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">Features</a></li>
-									<li><a href="#">Products</a></li>
-									<li><a href="#">Testimonial</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
-							<div class="col-md-6 gtco-footer-link">
-								<h3>Work</h3>
-								<ul class="gtco-list-link">
-									<li><a href="#">New York Arena</a></li>
-									<li><a href="#">Eagle Park</a></li>
-									<li><a href="#">Nationals Park</a></li>
-									<li><a href="#">Manila Park</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 gtco-footer-subscribe">
-						<form class="form-inline">
-						  <div class="form-group">
-						    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-						    <input type="email" class="form-control" id="" placeholder="Email">
-						  </div>
-						  <button type="submit" class="btn btn-primary">Send</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="gtco-copyright">
-				<div class="gtco-container">
-					<div class="row">
-						<div class="col-md-6 text-left">
-							<p><small>&copy; 2016 Free HTML5. All Rights Reserved. </small></p>
-						</div>
-						<div class="col-md-6 text-right">
-							<p><small>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://pixeden.com/" target="_blank">Pixeden</a> &amp; <a href="http://unsplash.com" target="_blank">Unsplash</a></small> </p>
-						</div>
-					</div>
+				<div class="image-grid">
+					<img class="image-item" src="images/placeholder.png" alt="">
+					<img class="image-item" src="images/placeholder.png" alt="">
+					<img class="image-item" src="images/placeholder.png" alt="">
+					<img class="image-item" src="images/placeholder.png" alt="">
+					<img class="image-item" src="images/placeholder.png" alt="">
+					<img class="image-item" src="images/placeholder.png" alt="">
+					<img class="image-item" src="images/placeholder.png" alt="">
+					<img class="image-item" src="images/placeholder.png" alt="">
 				</div>
 			</div>
 		</footer>
 		<!-- END footer -->
-
 	</div>
 
 	<div class="gototop js-top">
